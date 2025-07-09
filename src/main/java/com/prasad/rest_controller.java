@@ -9,10 +9,12 @@ import org.springframework.web.bind.annotation.RestController;
 @Controller
 @ResponseBody
 public class rest_controller {
-	@GetMapping("/king")
+	@GetMapping("/")
 	public String welcome() {
-		return "softs skins";
-		
+		return "Welcome to Ashokit";
+	}	
+	@GetMapping("/greet")
+	public String greet() {
+		return "Welcome to Hyd";	
 	}
-
 }
